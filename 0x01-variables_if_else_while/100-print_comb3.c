@@ -18,11 +18,10 @@ int main(void)
 			putchar((digit % 10) + '0');
 			putchar((digit1 % 10) + '0');
 
-			if (digit != 9 && digit1 != 10)
-			{	
-				putchar(',');
-				putchar(' ');
-			}
+			if (digit == 8 && digit1 == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
